@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<texts>
+  <text id="mainMenu">Главное меню</text>
+  <text id="shop">Магазин</text>
+  <text id="switchLanguage">Сменить язык</text>
+  <text id="buyButton">Купить {0} монет</text>
+  <text id="selectButton">Выбрать</text>
+  <text id="nextButton">След</text>
+  <text id="prevButton">Пред</text>
+  <text id="exitButton">Выход</text>
+  <text id="Select_Text">Выбрать</text>
+  <text id="BattlePass">Боевой пропуск</text>
+  <text id="Level">Уровень</text>
+  <text id="Setting">Настройки</text>
+  <text id="Battlepass">Battlepass 49 ЯН</text>
+  <text id="PerAds">За рекламу</text>
+  <text id="Start">Старт</text>
+  <text id="Sensitivity">Чувствительность</text>
+  <text id="Sound">Громкость</text>
+  <text id="YouBeenInfected">ВЫ ЗАРАЖЕНЫ</text>
+  <text id="Restart">Рестарт</text>
+  <text id="ContinuePerAds">Продолжить за рекламу</text>
+  <text id="Continue">Продолжить</text>
+  <text id="DoubleMoneyPerAds">Удвоить вознаграждение за рекламу</text>
+  <text id="NextLevel">Следующий уровень</text>
+  <text id="Win">Победа</text>
+  <text id="IsSelected">Выбрано</text>
+  <text id="Pause">Пауза</text>
+  <text id="EndWave">Конец волны</text>
+  <text id="PerAd">За рекламу</text>
+  <text id="Continue?">Продолжить?</text>
+  <text id="PriceBattlePass">49 ЯН</text>
+  <text id="Damage">Урон: </text>
+  <text id="wave">Волна</text>
+  <text id="takeTheBestWeapon">Возьми лучшее оружие</text>
+  <text id="Bought">Куплено</text>
+  <text id="Incline">Наклон - Q и E</text>
+  <text id="Jump">Прыжок - пробел</text>
+  <text id="WeaponChange">Смена оружия - X</text>
+  <text id="Grenade">Бросить гранату - G</text>
+  <text id="free">Бесплатно</text>
+  <text id="notNow">Не сейчас</text>
+  <text id="Music">Громкость музыки</text>
+  <text id="youGot">ВЫ ПОПАЛИСЬ</text>
+  <text id="damageText100">Урон: 100</text>
+  <text id="Price19Yan">Стоимость: 19ЯН</text>
+  <text id="19Yan">19 ЯН</text>
+  <text id="PauseGuide">Пауза - Esc</text>
+  <text id="Price29Yan">Стоимость: 29ЯН</text>
+  <text id="29Yan">29 ЯН</text>
+  <text id="PriceSuperGrenade">5 за 9 ЯН</text>
+  <text id="SuperGrenade">Бросить Супер гранату - V</text>
+  <text id=" partsInInventory">Запчасти в инвентаре</text>
+  <text id="Skin">Скин</text>
+  <text id="BuySparePart">Купить запчасть за 19ЯН</text>
+  <text id="FlyOffThePlanet">Улететь с планеты</text>
+  <text id="InstallSparePart">Установить запчасть</text>
+  <text id="PriceKit1">100 ЯИ</text>
+  <text id="PriceKit2">150 ЯИ</text>
+  <text id="PriceKitAll">200 ЯИ</text>
+  <text id="KitAllDescription">
+Всё оружие
+Все скины
+Батлпасс
+	</text>
+  <text id="Guide1">О боже, что стало с нашим городом! Эти буквы явно не дружелюбны! Уничтожь их</text>
+  <text id="Guide2">Для уничтожения у тебя есть оружие, будь аккуратен патроны не бесконечны</text>
+  <text id="Guide3">Скорее забирай запчасть от корабля и беги на базу</text>
+  <text id="AllKilled">Ты убил их всех! Возвращайся на базу!</text>
+  <text id="Сompleted">Выполнено</text>
+  <text id="DailyQuest">Ежедневные задания</text>
+  <text id="GRENADE">Граната</text>
+  <text id="SUPERGRENADE">Супер граната</text>
+  <text id="Go Wave">Обычная игра</text>
+  <text id="Survival">Выживание</text>
+</texts>

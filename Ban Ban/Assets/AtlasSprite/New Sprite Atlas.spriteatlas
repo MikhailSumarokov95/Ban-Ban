@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Sprite Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: e758822ec96aeb446b468e792db7863a, type: 3}
+    - {fileID: 2800000, guid: 8a843a1597534a74685121d4e69dbccd, type: 3}
+    - {fileID: 2800000, guid: ef3ef3d64d97f5c4ebaa3acc0dc991cb, type: 3}
+    - {fileID: 2800000, guid: cbb61b0ac5eec354ca60d550fa25c254, type: 3}
+    - {fileID: 2800000, guid: 0e385f4e6a409d34f872a0a58cac2f02, type: 3}
+    - {fileID: 2800000, guid: 0183e62e536518042b41bc1d06c99770, type: 3}
+    - {fileID: 2800000, guid: e951f33c57c18244f9ef2a9b90963882, type: 3}
+    - {fileID: 2800000, guid: 9ded74900e32ca14998151fb453e90c5, type: 3}
+    - {fileID: 2800000, guid: 3684dc3b00d33224492b04279dd39dff, type: 3}
+    - {fileID: 2800000, guid: 594c70e7919823d43854454e0a4e24cc, type: 3}
+    - {fileID: 2800000, guid: 864de4c6ab32eae488bf6174f5c91d1a, type: 3}
+    - {fileID: 2800000, guid: 41dc2e10dca5ff8468d3e1fd621334d5, type: 3}
+    - {fileID: 2800000, guid: 7966bf07691b6754aae383b496ceb522, type: 3}
+    - {fileID: 2800000, guid: 4ad1025e8c323ac4f8b1781c9960189e, type: 3}
+    - {fileID: 2800000, guid: e41486c7c34a5904f8df28117c661a4a, type: 3}
+    - {fileID: 2800000, guid: 19dc3292d298eb94995a5a331a39fd97, type: 3}
+    - {fileID: 2800000, guid: 7e6735d16e3c7e84ab88aab34f54dbc0, type: 3}
+    - {fileID: 2800000, guid: 878aaa2591731a44c8ad9eeb50c6498d, type: 3}
+    - {fileID: 2800000, guid: 0797584b8629d42cf8a4b7eaeebf267b, type: 3}
+    - {fileID: 2800000, guid: 81c3b96b768ec48c09cd36780e19b797, type: 3}
+    - {fileID: 2800000, guid: 0f9eb00540c074ac99e2885359d51169, type: 3}
+    - {fileID: 2800000, guid: 0ae3ff78b101741ffb84ec50fe6e50df, type: 3}
+    - {fileID: 2800000, guid: c565a3755f5ff43ef8fac9a1f611f506, type: 3}
+    - {fileID: 2800000, guid: c4b5dc1f42e1d4613aaf169ad09e3585, type: 3}
+    - {fileID: 2800000, guid: 880cef4b466874c68933f0676dfe1e75, type: 3}
+    - {fileID: 2800000, guid: acd5ed7ea39974803911ce7c3697b7d9, type: 3}
+    - {fileID: 2800000, guid: fe034cc1de8aa48ecb011082dc740c0e, type: 3}
+    - {fileID: 2800000, guid: 57190d23a8d2f4298bb98c62f2c92aef, type: 3}
+    - {fileID: 2800000, guid: a2f838448ba53435c81b81af62f9ab7f, type: 3}
+    - {fileID: 2800000, guid: bf7ec18812f794241b072cd447e22a84, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 41dc2e10dca5ff8468d3e1fd621334d5, type: 3}
+  - {fileID: 21300000, guid: 9ded74900e32ca14998151fb453e90c5, type: 3}
+  - {fileID: 21300000, guid: fe034cc1de8aa48ecb011082dc740c0e, type: 3}
+  - {fileID: 21300000, guid: 7e6735d16e3c7e84ab88aab34f54dbc0, type: 3}
+  - {fileID: 21300000, guid: 19dc3292d298eb94995a5a331a39fd97, type: 3}
+  - {fileID: 21300000, guid: 57190d23a8d2f4298bb98c62f2c92aef, type: 3}
+  - {fileID: 21300000, guid: a2f838448ba53435c81b81af62f9ab7f, type: 3}
+  - {fileID: 21300000, guid: 0f9eb00540c074ac99e2885359d51169, type: 3}
+  - {fileID: 21300000, guid: 8a843a1597534a74685121d4e69dbccd, type: 3}
+  - {fileID: 21300000, guid: 878aaa2591731a44c8ad9eeb50c6498d, type: 3}
+  - {fileID: 21300000, guid: c565a3755f5ff43ef8fac9a1f611f506, type: 3}
+  - {fileID: 21300000, guid: 864de4c6ab32eae488bf6174f5c91d1a, type: 3}
+  - {fileID: 21300000, guid: ef3ef3d64d97f5c4ebaa3acc0dc991cb, type: 3}
+  - {fileID: 21300000, guid: 7966bf07691b6754aae383b496ceb522, type: 3}
+  - {fileID: 21300000, guid: e41486c7c34a5904f8df28117c661a4a, type: 3}
+  - {fileID: 21300000, guid: 594c70e7919823d43854454e0a4e24cc, type: 3}
+  - {fileID: 21300000, guid: 0ae3ff78b101741ffb84ec50fe6e50df, type: 3}
+  - {fileID: 21300000, guid: bf7ec18812f794241b072cd447e22a84, type: 3}
+  - {fileID: 21300000, guid: cbb61b0ac5eec354ca60d550fa25c254, type: 3}
+  - {fileID: 21300000, guid: 3684dc3b00d33224492b04279dd39dff, type: 3}
+  - {fileID: 21300000, guid: 0797584b8629d42cf8a4b7eaeebf267b, type: 3}
+  - {fileID: 21300000, guid: 880cef4b466874c68933f0676dfe1e75, type: 3}
+  - {fileID: 21300000, guid: 81c3b96b768ec48c09cd36780e19b797, type: 3}
+  - {fileID: 21300000, guid: e951f33c57c18244f9ef2a9b90963882, type: 3}
+  - {fileID: 21300000, guid: e758822ec96aeb446b468e792db7863a, type: 3}
+  - {fileID: 21300000, guid: 0183e62e536518042b41bc1d06c99770, type: 3}
+  - {fileID: 21300000, guid: 0e385f4e6a409d34f872a0a58cac2f02, type: 3}
+  - {fileID: 21300000, guid: 4ad1025e8c323ac4f8b1781c9960189e, type: 3}
+  - {fileID: 21300000, guid: acd5ed7ea39974803911ce7c3697b7d9, type: 3}
+  - {fileID: 21300000, guid: c4b5dc1f42e1d4613aaf169ad09e3585, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - SMG-02
+  - HG-04
+  - Popup_TopFrame_In
+  - SN-02
+  - SN-01
+  - Btn_Square00_Green
+  - Btn_Square00_Blue
+  - TableFrame
+  - AR-02
+  - SN-03
+  - icon_sword
+  - SMG-01
+  - AR-03
+  - SMG-03
+  - SMG-05
+  - SG-01
+  - icon_stopwatch
+  - Btn_Square00_Yellow
+  - GL-01
+  - RL-01
+  - Item_Shopicon_Bullet06
+  - Label_Ribbon
+  - Popup00_Frame
+  - HG-03
+  - AR-01
+  - HG-02
+  - HG-01
+  - SMG-04
+  - Icon_MenuIcon07_Exit_s
+  - ItemFrame01
+  m_RenderDataMap: {}
+  m_Tag: New Sprite Atlas
+  m_IsVariant: 0

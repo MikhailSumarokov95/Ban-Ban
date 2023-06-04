@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<text>
+	<text id="mainMenu">Main menu</text>
+	<text id="shop">Shop</text>
+	<text id="switchLanguage">Switch language</text>
+	<text id="buyButton">Buy {0} coins</text>
+	<text id="selectButton">Select</text>
+	<text id="nextButton">Next</text>
+	<text id="prevButton">Prev</text>
+	<text id="exitButton">Exit</text>
+	<text id="Select_Text">Select</text>
+	<text id="BattlePass">Battle Pass</text>
+	<text id="Level">Level</text>
+	<text id="Setting">Settings</text>
+	<text id="Battlepass">Battlepass 49 JAN</text>
+	<text id="PerAds">PerAds</text>
+	<text id="Start">Start</text>
+	<text id="Sensitivity">Sensitivity</text>
+	<text id="Sound">Volume</text>
+	<text id="YouBeenInfected">YOU ARE INFECTED</text>
+	<text id="Restart">Restart</text>
+	<text id="ContinuePerAds">Continue Per Ads</text>
+	<text id="Continue">Continue</text>
+	<text id="DoubleMoneyPerAds">Double Money Per Ads</text>
+	<text id="NextLevel">Next Level</text>
+	<text id="Win">Win</text>
+	<text id="IsSelected">Selected</text>
+	<text id="Pause">Pause</text>
+	<text id="EndWave">End Wave</text>
+	<text id="PerAd">PerAd</text>
+	<text id="Continue?">Continue?</text>
+	<text id="PriceBattlePass">49 YAN</text>
+	<text id="Damage">Damage: </text>
+	<text id="wave">Wave</text>
+	<text id="takeTheBestWeapon">Take the best weapon</text>
+	<text id="Bought">Bought</text>
+	<text id="Incline">Slope - Q and E</text>
+	<text id="Jump">Jump - space</text>
+	<text id="WeaponChange">Weapon Change - X</text>
+	<text id="Grenade">Throw Grenade - G</text>
+	<text id="free">Free</text>
+	<text id="notNow">Not Now</text>
+	<text id="Music">Music volume</text>
+	<text id="youGot">YOU GOT</text>
+	<text id="damageText100">Damage: 100</text>
+	<text id="Price19Yan">Price: 19YAN</text>
+	<text id="19Yan">19 YAN</text>
+	<text id="PauseGuide">Pause - Esc</text>
+	<text id="Price29Yan">Price: 29YAN</text>
+	<text id="29Yan">29 YAN</text>
+	<text id="PriceSuperGrenade">5 for 9 YAN</text>
+	<text id="SuperGrenade">Throw Super Grenade - V</text>
+	<text id=" partsInInventory">Parts in inventory</text>
+	<text id="Skin">Skin</text>
+	<text id="BuySparePart">Buy Spare Part for 19YAN</text>
+	<text id="FlyOffThePlanet">Fly off the planet</text>
+	<text id="InstallSparePart">Install Spare Part</text>
+	<text id="PriceKit1">100 YAN</text>
+	<text id="PriceKit2">150 YAN</text>
+	<text id="PriceKitAll">200 YAN</text>
+	<text id="KitAllDescription">
+All weapons
+All skins
+Battlepass
+	</text>
+	<text id="Guide1">Oh my God, what happened to our city! These letters are clearly not friendly! Destroy them</text>
+	<text id="Guide2">You have a weapon to destroy, be careful the ammo is not infinite</text>
+	<text id="Guide3">Hurry up, grab the ship part and run to the base</text>
+	<text id="AllKilled">You killed them all! Get back to base!</text>
+	<text id="Сompleted">Сompleted</text>
+	<text id="DailyQuest">Daily Quest</text>
+	<text id="GRENADE">Grenade</text>
+	<text id="SUPERGRENADE">Supergrenade</text>
+	<text id="Go Wave">Regular game</text>
+	<text id="Survival">Survival</text>
+</text>

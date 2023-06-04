@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c7d49fcf713b4ac42b9a6c26666a20b7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - itemTransform: {instanceID: 0}
+  - settings: {fileID: 11400000, guid: 1e9c25331247bd04582d9335b6c1bf6b, type: 2}
+  - buyButton: {instanceID: 0}
+  - selectButton: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
