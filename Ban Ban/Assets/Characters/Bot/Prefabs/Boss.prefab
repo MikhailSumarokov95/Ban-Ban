@@ -749,7 +749,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.6
   m_Height: 3.8
   m_Direction: 1
   m_Center: {x: 0, y: 1.9, z: 0}
@@ -762,7 +762,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 7509978335627205012}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.8
+  m_Radius: 0.6
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50

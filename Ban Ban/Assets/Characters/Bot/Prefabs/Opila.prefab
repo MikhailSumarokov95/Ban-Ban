@@ -723,7 +723,7 @@ MonoBehaviour:
   currentHealth: 0
   currentHealthText: {fileID: 0}
   takeDamageSoundPref: {fileID: 0}
-  maxHealth: 75
+  maxHealth: 100
 --- !u!114 &1572266389664300310
 MonoBehaviour:
   m_ObjectHideFlags: 0

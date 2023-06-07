@@ -945,7 +945,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.6
   m_Height: 3
   m_Direction: 1
   m_Center: {x: 0, y: 1.5, z: 0}
@@ -958,7 +958,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 8703644049918788539}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.8
+  m_Radius: 0.6
   m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
@@ -987,7 +987,7 @@ MonoBehaviour:
   currentHealth: 0
   currentHealthText: {fileID: 0}
   takeDamageSoundPref: {fileID: 0}
-  maxHealth: 75
+  maxHealth: 100
 --- !u!114 &2239926781896147370
 MonoBehaviour:
   m_ObjectHideFlags: 0
