@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 420996, guid: 998ad100d4990e64fa392a818adf1a8c, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 420996, guid: 998ad100d4990e64fa392a818adf1a8c, type: 3}
       propertyPath: m_LocalScale.x
@@ -164,7 +164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 420996, guid: 998ad100d4990e64fa392a818adf1a8c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 420996, guid: 998ad100d4990e64fa392a818adf1a8c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -400,6 +400,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 644015952}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &73956747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73956745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: Panda
+  buffs:
+  - buff: 0
+    power: 15
+  isFree: 0
+  priceInMoney: 2500
+  priceInYan: 0
 --- !u!1001 &95867156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -930,6 +949,23 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2022632863}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &200843978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200843976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: Simple_Robber
+  buffs: []
+  isFree: 1
+  priceInMoney: 0
+  priceInYan: 0
 --- !u!1 &222585871
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,6 +1505,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 896449723}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &260770854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260770852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: Trump
+  buffs:
+  - buff: 1
+    power: 15
+  isFree: 0
+  priceInMoney: 1500
+  priceInYan: 0
 --- !u!1001 &275382916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1673,6 +1728,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 812588515}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &290559751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290559749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: Construction
+  buffs:
+  - buff: 0
+    power: 15
+  isFree: 0
+  priceInMoney: 1000
+  priceInYan: 0
 --- !u!1001 &324736009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2253,6 +2327,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1581964559}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &365279144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365279142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: Tiger
+  buffs:
+  - buff: 2
+    power: 25
+  - buff: 1
+    power: 25
+  isFree: 0
+  priceInMoney: 0
+  priceInYan: 19
 --- !u!1001 &377572959
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2887,7 +2982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 466424, guid: c553e1898167e46448e6e90eca7d53b1, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 466424, guid: c553e1898167e46448e6e90eca7d53b1, type: 3}
       propertyPath: m_LocalScale.x
@@ -2960,7 +3055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 430702, guid: 7ceb3a1f1f168f142bde4734b0dfbea0, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 430702, guid: 7ceb3a1f1f168f142bde4734b0dfbea0, type: 3}
       propertyPath: m_LocalScale.x
@@ -3320,6 +3415,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 690057139}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &566616545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566616543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: Chicken
+  buffs:
+  - buff: 0
+    power: 25
+  - buff: 1
+    power: 25
+  isFree: 0
+  priceInMoney: 0
+  priceInYan: 19
 --- !u!224 &587070610 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2035319243772661296, guid: 86ca2c6b3e2523d438bf45631733825e,
@@ -3548,6 +3664,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 527985723}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &657810466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657810464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: Alien
+  buffs:
+  - buff: 2
+    power: 15
+  isFree: 0
+  priceInMoney: 500
+  priceInYan: 0
 --- !u!1001 &690057139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3565,7 +3700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 459066, guid: e623934734aa75948abaa4aa62c9e146, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 459066, guid: e623934734aa75948abaa4aa62c9e146, type: 3}
       propertyPath: m_LocalScale.x
@@ -4447,6 +4582,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 447135108}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &844204488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844204486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: Hat
+  buffs:
+  - buff: 2
+    power: 25
+  - buff: 1
+    power: 25
+  isFree: 0
+  priceInMoney: 0
+  priceInYan: 19
 --- !u!1001 &872455848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4464,7 +4620,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 425024, guid: 05bb5227e8bf9f145920345bbd687941, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 425024, guid: 05bb5227e8bf9f145920345bbd687941, type: 3}
       propertyPath: m_LocalScale.x
@@ -4484,11 +4640,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 425024, guid: 05bb5227e8bf9f145920345bbd687941, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.00002104044
       objectReference: {fileID: 0}
     - target: {fileID: 425024, guid: 05bb5227e8bf9f145920345bbd687941, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.8
+      value: 0.79999167
       objectReference: {fileID: 0}
     - target: {fileID: 425024, guid: 05bb5227e8bf9f145920345bbd687941, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4496,15 +4652,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 425024, guid: 05bb5227e8bf9f145920345bbd687941, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 425024, guid: 05bb5227e8bf9f145920345bbd687941, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 425024, guid: 05bb5227e8bf9f145920345bbd687941, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 425024, guid: 05bb5227e8bf9f145920345bbd687941, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4982,6 +5138,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 256366359}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &944696794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944696792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: Balaclava
+  buffs:
+  - buff: 1
+    power: 15
+  isFree: 0
+  priceInMoney: 1000
+  priceInYan: 0
 --- !u!1001 &946031369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5179,7 +5354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440114, guid: 593f0cf20ebe5ec4db08b51779053d3f, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 440114, guid: 593f0cf20ebe5ec4db08b51779053d3f, type: 3}
       propertyPath: m_LocalScale.x
@@ -5199,11 +5374,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440114, guid: 593f0cf20ebe5ec4db08b51779053d3f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.000024199486
       objectReference: {fileID: 0}
     - target: {fileID: 440114, guid: 593f0cf20ebe5ec4db08b51779053d3f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.7
+      value: 0.69999444
       objectReference: {fileID: 0}
     - target: {fileID: 440114, guid: 593f0cf20ebe5ec4db08b51779053d3f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5211,15 +5386,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440114, guid: 593f0cf20ebe5ec4db08b51779053d3f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 440114, guid: 593f0cf20ebe5ec4db08b51779053d3f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 440114, guid: 593f0cf20ebe5ec4db08b51779053d3f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 440114, guid: 593f0cf20ebe5ec4db08b51779053d3f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5247,6 +5422,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 502933264}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &966540119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966540117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: WeldersMask
+  buffs:
+  - buff: 0
+    power: 20
+  isFree: 0
+  priceInMoney: 1500
+  priceInYan: 0
 --- !u!1 &991551395 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 161250, guid: 8654b15919165984eb25a3047d77464f,
@@ -5259,6 +5453,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 434463465}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &991551397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991551395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: Glasses
+  buffs:
+  - buff: 2
+    power: 25
+  isFree: 0
+  priceInMoney: 4000
+  priceInYan: 0
 --- !u!1 &996141840 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5154821697352265024, guid: 030279b3e7363ba42bfe936ce12bc17c,
@@ -5283,6 +5496,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1487164218}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1037507911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037507909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: Horse
+  buffs:
+  - buff: 2
+    power: 30
+  isFree: 0
+  priceInMoney: 4500
+  priceInYan: 0
 --- !u!1 &1042399408 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 122708, guid: 4f674d29a54e07d4db2e03be4011407e,
@@ -5295,6 +5527,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1671618412}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1042399410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042399408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: Gas
+  buffs:
+  - buff: 0
+    power: 15
+  isFree: 0
+  priceInMoney: 3500
+  priceInYan: 0
 --- !u!224 &1053072145 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5100711377283473619, guid: 0f276dc90dcb03a4a9f8a0d4365bf7fc,
@@ -6936,6 +7187,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 786805925}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1254650160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254650158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: Luchador
+  buffs:
+  - buff: 0
+    power: 15
+  isFree: 0
+  priceInMoney: 3500
+  priceInYan: 0
 --- !u!1 &1288967651
 GameObject:
   m_ObjectHideFlags: 0
@@ -7895,6 +8165,23 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 872455848}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1399225700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399225698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: Simple_Woman
+  buffs: []
+  isFree: 1
+  priceInMoney: 0
+  priceInYan: 0
 --- !u!224 &1400082293 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5100711377283473619, guid: 0f276dc90dcb03a4a9f8a0d4365bf7fc,
@@ -8061,6 +8348,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 881091973}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1524700636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524700634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: Fox
+  buffs:
+  - buff: 2
+    power: 15
+  isFree: 0
+  priceInMoney: 2500
+  priceInYan: 0
 --- !u!1001 &1532669626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8281,10 +8587,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1548056000}
-  - {fileID: 1399225699}
-  - {fileID: 1858240527}
-  - {fileID: 200843977}
+  - {fileID: 844204487}
+  - {fileID: 566616544}
+  - {fileID: 1690347770}
+  - {fileID: 365279143}
   - {fileID: 657810465}
   - {fileID: 944696793}
   - {fileID: 290559750}
@@ -8298,10 +8604,10 @@ Transform:
   - {fileID: 991551396}
   - {fileID: 1037507910}
   - {fileID: 1972512457}
-  - {fileID: 844204487}
-  - {fileID: 566616544}
-  - {fileID: 1690347770}
-  - {fileID: 365279143}
+  - {fileID: 1548056000}
+  - {fileID: 1399225699}
+  - {fileID: 1858240527}
+  - {fileID: 200843977}
   m_Father: {fileID: 5801048886863582753}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8317,6 +8623,23 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 952442193}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1548056001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548055999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: Simple_Man
+  buffs: []
+  isFree: 1
+  priceInMoney: 0
+  priceInYan: 0
 --- !u!224 &1554815796 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6881236217283485288, guid: 830ef3d2b1e840749a1ec073712983bc,
@@ -8662,7 +8985,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 468472, guid: 8cf39fddff0960249834e0ab7cf892aa, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 468472, guid: 8cf39fddff0960249834e0ab7cf892aa, type: 3}
       propertyPath: m_LocalScale.x
@@ -9347,6 +9670,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2103562019}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1686475032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686475030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: PaperBag
+  buffs:
+  - buff: 2
+    power: 15
+  isFree: 0
+  priceInMoney: 1500
+  priceInYan: 0
 --- !u!1 &1690347769 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 147836, guid: 7ceb3a1f1f168f142bde4734b0dfbea0,
@@ -9359,6 +9701,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 467772428}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1690347771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690347769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: Clown
+  buffs:
+  - buff: 0
+    power: 25
+  - buff: 1
+    power: 25
+  isFree: 0
+  priceInMoney: 0
+  priceInYan: 19
 --- !u!1001 &1698531986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10474,6 +10837,23 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2764952}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1858240528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858240526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: Beanie
+  buffs: []
+  isFree: 1
+  priceInMoney: 200
+  priceInYan: 0
 --- !u!224 &1931407215 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2035319243772661296, guid: 86ca2c6b3e2523d438bf45631733825e,
@@ -10947,175 +11327,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17d577fd0544d7446b8996893b54cbf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinParameters:
-  - Name: Simple_Man
-    Buffs: []
-    Skin: {fileID: 1548055999}
-    IsFree: 1
-    PriceInMoney: 0
-    PriceInYan: 0
-  - Name: Simple_Woman
-    Buffs: []
-    Skin: {fileID: 1399225698}
-    IsFree: 1
-    PriceInMoney: 0
-    PriceInYan: 0
-  - Name: Beanie
-    Buffs: []
-    Skin: {fileID: 1858240526}
-    IsFree: 1
-    PriceInMoney: 200
-    PriceInYan: 0
-  - Name: Simple_Robber
-    Buffs: []
-    Skin: {fileID: 200843976}
-    IsFree: 1
-    PriceInMoney: 0
-    PriceInYan: 0
-  - Name: Alien
-    Buffs:
-    - Buff: 2
-      Power: 5
-    Skin: {fileID: 657810464}
-    IsFree: 0
-    PriceInMoney: 500
-    PriceInYan: 0
-  - Name: Balaclava
-    Buffs:
-    - Buff: 1
-      Power: 5
-    Skin: {fileID: 944696792}
-    IsFree: 0
-    PriceInMoney: 1000
-    PriceInYan: 0
-  - Name: Construction
-    Buffs:
-    - Buff: 0
-      Power: 5
-    Skin: {fileID: 290559749}
-    IsFree: 0
-    PriceInMoney: 1000
-    PriceInYan: 0
-  - Name: WeldersMask
-    Buffs:
-    - Buff: 0
-      Power: 10
-    Skin: {fileID: 966540117}
-    IsFree: 0
-    PriceInMoney: 1500
-    PriceInYan: 0
-  - Name: Trump
-    Buffs:
-    - Buff: 1
-      Power: 5
-    Skin: {fileID: 260770852}
-    IsFree: 0
-    PriceInMoney: 1500
-    PriceInYan: 0
-  - Name: PaperBag
-    Buffs:
-    - Buff: 2
-      Power: 5
-    Skin: {fileID: 1686475030}
-    IsFree: 0
-    PriceInMoney: 1500
-    PriceInYan: 0
-  - Name: Fox
-    Buffs:
-    - Buff: 2
-      Power: 5
-    Skin: {fileID: 1524700634}
-    IsFree: 0
-    PriceInMoney: 2500
-    PriceInYan: 0
-  - Name: Panda
-    Buffs:
-    - Buff: 0
-      Power: 5
-    Skin: {fileID: 73956745}
-    IsFree: 0
-    PriceInMoney: 2500
-    PriceInYan: 0
-  - Name: Luchador
-    Buffs:
-    - Buff: 0
-      Power: 5
-    Skin: {fileID: 1254650158}
-    IsFree: 0
-    PriceInMoney: 3500
-    PriceInYan: 0
-  - Name: Gas
-    Buffs:
-    - Buff: 0
-      Power: 5
-    Skin: {fileID: 1042399408}
-    IsFree: 0
-    PriceInMoney: 3500
-    PriceInYan: 0
-  - Name: Glasses
-    Buffs:
-    - Buff: 2
-      Power: 5
-    Skin: {fileID: 991551395}
-    IsFree: 0
-    PriceInMoney: 4000
-    PriceInYan: 0
-  - Name: Horse
-    Buffs:
-    - Buff: 2
-      Power: 10
-    Skin: {fileID: 1037507909}
-    IsFree: 0
-    PriceInMoney: 4500
-    PriceInYan: 0
-  - Name: Hockey
-    Buffs:
-    - Buff: 1
-      Power: 10
-    Skin: {fileID: 1972512456}
-    IsFree: 0
-    PriceInMoney: 5000
-    PriceInYan: 0
-  - Name: Hat
-    Buffs:
-    - Buff: 2
-      Power: 5
-    - Buff: 1
-      Power: 5
-    Skin: {fileID: 844204486}
-    IsFree: 0
-    PriceInMoney: 0
-    PriceInYan: 19
-  - Name: Chicken
-    Buffs:
-    - Buff: 0
-      Power: 10
-    - Buff: 1
-      Power: 5
-    Skin: {fileID: 566616543}
-    IsFree: 0
-    PriceInMoney: 0
-    PriceInYan: 19
-  - Name: Clown
-    Buffs:
-    - Buff: 0
-      Power: 10
-    - Buff: 1
-      Power: 10
-    Skin: {fileID: 1690347769}
-    IsFree: 0
-    PriceInMoney: 0
-    PriceInYan: 19
-  - Name: Tiger
-    Buffs:
-    - Buff: 2
-      Power: 10
-    - Buff: 1
-      Power: 10
-    Skin: {fileID: 365279142}
-    IsFree: 0
-    PriceInMoney: 0
-    PriceInYan: 19
+  skins:
+  - {fileID: 844204488}
+  - {fileID: 566616545}
+  - {fileID: 1690347771}
+  - {fileID: 365279144}
+  - {fileID: 657810466}
+  - {fileID: 944696794}
+  - {fileID: 290559751}
+  - {fileID: 966540119}
+  - {fileID: 260770854}
+  - {fileID: 1686475032}
+  - {fileID: 1524700636}
+  - {fileID: 73956747}
+  - {fileID: 1254650160}
+  - {fileID: 1042399410}
+  - {fileID: 991551397}
+  - {fileID: 1037507911}
+  - {fileID: 1972512458}
+  - {fileID: 1548056001}
+  - {fileID: 1399225700}
+  - {fileID: 1858240528}
+  - {fileID: 200843978}
   priceMoneyText: {fileID: 5529880772162763314}
   priceYANText: {fileID: 611388293}
   isBoughtText: {fileID: 5342654357480442285}
@@ -11173,6 +11406,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 726636506}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1972512458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972512456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c763a7597f59a044b6b9da82d68e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameSkin: Hockey
+  buffs:
+  - buff: 1
+    power: 25
+  isFree: 0
+  priceInMoney: 5000
+  priceInYan: 0
 --- !u!1 &1974169355
 GameObject:
   m_ObjectHideFlags: 0
@@ -11424,7 +11676,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 450908, guid: 705142479b09f0043b9b4ff84691b2b0, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 450908, guid: 705142479b09f0043b9b4ff84691b2b0, type: 3}
       propertyPath: m_LocalScale.x
@@ -12024,7 +12276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2104950766
 RectTransform:
   m_ObjectHideFlags: 0

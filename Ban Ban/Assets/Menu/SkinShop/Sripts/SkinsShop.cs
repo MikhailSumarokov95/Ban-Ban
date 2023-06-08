@@ -11,7 +11,7 @@ public class SkinsShop : MonoBehaviour, IShopPurchase
         Speed
     }
 
-    [SerializeField] private SkinParameters[] skinParameters;
+    [SerializeField] private Skin[] skins;
 
     [Title(label: "Button Text")]
     [SerializeField] private TMP_Text priceMoneyText;
@@ -33,29 +33,29 @@ public class SkinsShop : MonoBehaviour, IShopPurchase
 
     public void ScrollSkin(int direction)
     {
-        SetActiveBuffParameters(_numberSkin, false);
+        SetActiveBuffSkins(_numberSkin, false);
         SetActiveSkinInModel(_numberSkin, false);
         SetActiveButtonShop(_numberSkin, false);
         _numberSkin = Math.Sign(direction) + _numberSkin;
-        _numberSkin = ToxicFamilyGames.Math.SawChart(_numberSkin, 0, skinParameters.Length - 1);
-        SetActiveBuffParameters(_numberSkin, true);
+        _numberSkin = ToxicFamilyGames.Math.SawChart(_numberSkin, 0, skins.Length - 1);
+        SetActiveBuffSkins(_numberSkin, true);
         SetActiveSkinInModel(_numberSkin, true);
         SetActiveButtonShop(_numberSkin, true);
     }
 
     public void BuySkin()
     {
-        if (skinParameters[_numberSkin].PriceInMoney > 0)
+        if (skins[_numberSkin].PriceInMoney > 0)
         {
-            if (Money.SpendMoney(skinParameters[_numberSkin].PriceInMoney))
+            if (Money.SpendMoney(skins[_numberSkin].PriceInMoney))
             {
-                Progress.SaveBoughtSkinPlayer(skinParameters[_numberSkin].Name);
+                Progress.SaveBoughtSkinPlayer(skins[_numberSkin].NameSkin);
                 ReloadShop();
             }
         }
-        else if (skinParameters[_numberSkin].PriceInYan > 0)
+        else if (skins[_numberSkin].PriceInYan > 0)
         {
-            switch (skinParameters[_numberSkin].Name)
+            switch (skins[_numberSkin].NameSkin)
             {
                 case "Clown":
                     GSConnect.Purchase(GSConnect.PurchaseTag.Clown, this);
@@ -75,15 +75,15 @@ public class SkinsShop : MonoBehaviour, IShopPurchase
 
     public void RewardPerPurchase()
     {
-        Progress.SaveBoughtSkinPlayer(skinParameters[_numberSkin].Name);
+        Progress.SaveBoughtSkinPlayer(skins[_numberSkin].NameSkin);
         ReloadShop();
     }
 
     public void SelectSkin()
     {
-        Progress.SaveSelectedSkinPlayer(skinParameters[_numberSkin].Name);
+        Progress.SaveSelectedSkinPlayer(skins[_numberSkin].NameSkin);
         var buffs = new TFG.Generic.Dictionary<Buff, int>();
-        foreach (var buff in skinParameters[_numberSkin].Buffs)
+        foreach (var buff in skins[_numberSkin].Buffs)
             buffs.Add(buff.Buff, buff.Power);
         Progress.SaveSelectedBuffs(buffs);
         ReloadShop();
@@ -93,7 +93,7 @@ public class SkinsShop : MonoBehaviour, IShopPurchase
     {
         DisableAllTexts();
         DisableAllSkins();
-        SetActiveBuffParameters(_numberSkin, true);
+        SetActiveBuffSkins(_numberSkin, true);
         SetActiveSkinInModel(_numberSkin, true);
         SetActiveButtonShop(_numberSkin, true);
     }
@@ -109,9 +109,9 @@ public class SkinsShop : MonoBehaviour, IShopPurchase
         speedText.transform.parent.gameObject.SetActive(false);
     }
 
-    private void SetActiveBuffParameters(int number, bool value)
+    private void SetActiveBuffSkins(int number, bool value)
     {
-        foreach (var buff in skinParameters[number].Buffs)
+        foreach (var buff in skins[number].Buffs)
         {
             switch (buff.Buff)
             {
@@ -133,62 +133,42 @@ public class SkinsShop : MonoBehaviour, IShopPurchase
 
     private void DisableAllSkins()
     {
-        foreach(var parameter in skinParameters)
-            parameter.Skin.gameObject.SetActive(false);
+        foreach(var skin in skins)
+            skin.gameObject.SetActive(false);
     }
 
-    private void SetActiveSkinInModel(int number, bool value) => skinParameters[number].Skin.SetActive(value);
+    private void SetActiveSkinInModel(int number, bool value) => skins[number].gameObject.SetActive(value);
 
     private void SetActiveButtonShop(int number, bool value)
     {
-        if (skinParameters[number].IsFree)
+        if (skins[number].IsFree)
         {
             isBoughtText.transform.parent.gameObject.SetActive(value);
         }
-        else if (Progress.IsSelectedSkinPlayer(skinParameters[number].Name))
+        else if (Progress.IsSelectedSkinPlayer(skins[number].NameSkin))
         {
             isSelectedText.transform.parent.gameObject.SetActive(value);
         }
-        else if (Progress.IsBoughtSkinPlayer(skinParameters[number].Name))
+        else if (Progress.IsBoughtSkinPlayer(skins[number].NameSkin))
         {
             isBoughtText.transform.parent.gameObject.SetActive(value);
         }
-        else if (skinParameters[number].PriceInMoney != 0)
+        else if (skins[number].PriceInMoney != 0)
         {
             priceMoneyText.transform.parent.gameObject.SetActive(value);
-            priceMoneyText.text = skinParameters[number].PriceInMoney.ToString();
+            priceMoneyText.text = skins[number].PriceInMoney.ToString();
         }
         else
         {
             priceYANText.transform.parent.gameObject.SetActive(value);
-            priceYANText.text = skinParameters[number].PriceInYan.ToString();
+            priceYANText.text = skins[number].PriceInYan.ToString();
         }
     }
 
     private int FindNumberSkinInSkinParameters(string nameSkin)
     {
-        for (var i = 0; i < skinParameters.Length; i++)
-            if (skinParameters[i].Name == nameSkin) return i;
+        for (var i = 0; i < skins.Length; i++)
+            if (skins[i].NameSkin == nameSkin) return i;
         return 0;
-    }
-
-    [Serializable]
-    private class SkinParameters
-    {
-        public string Name;
-        public BuffPower[] Buffs;
-        public GameObject Skin;
-
-        [Title(label: "Price")]
-        public bool IsFree;
-        public int PriceInMoney;
-        public int PriceInYan;
-
-        [Serializable]
-        public class BuffPower
-        {
-            public Buff Buff;
-            public int Power;
-        }
     }
 }
