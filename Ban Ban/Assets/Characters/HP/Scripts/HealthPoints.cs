@@ -15,12 +15,23 @@ public class HealthPoints : MonoBehaviour
     private Life _life;
 
     [SerializeField] private int maxHealth;
-    public int MaxHealth { get { return maxHealth; } private set { maxHealth = value; } }
+    public int MaxHealth 
+    { 
+        get 
+        { 
+            return maxHealth; 
+        } 
+        private set 
+        { 
+            maxHealth = value;
+            if (healthBar != null) healthBar.maxValue = maxHealth;
+        } 
+    }
 
     private bool _isHit;
     public bool IsHit { get { return _isHit;  } set { _isHit = value; } }
 
-    private bool _corotuneDelayTimerAfterHit;
+    private bool _coroutineDelayTimerAfterHit;
 
     public int CurrentHealth 
     { 
@@ -38,8 +49,7 @@ public class HealthPoints : MonoBehaviour
 
     private void Start()
     {
-        if (healthBar != null) healthBar.maxValue = maxHealth;
-            CurrentHealth = maxHealth;
+        CurrentHealth = maxHealth;
         _life = GetComponent<Life>();
     }
 
@@ -54,7 +64,7 @@ public class HealthPoints : MonoBehaviour
             var soundTakeDamage = Instantiate(takeDamageSoundPref, transform.position, transform.rotation);
             Destroy(soundTakeDamage, soundTakeDamage.GetComponent<AudioSource>().clip.length);
         }
-        if (!_corotuneDelayTimerAfterHit) 
+        if (!_coroutineDelayTimerAfterHit) 
             StartCoroutine(DelayTimerAfterHit());
         OnTakeDamage?.Invoke();
     }
@@ -81,10 +91,10 @@ public class HealthPoints : MonoBehaviour
 
     private IEnumerator DelayTimerAfterHit()
     {
-        _corotuneDelayTimerAfterHit = true;
+        _coroutineDelayTimerAfterHit = true;
         IsHit = true;
         yield return new WaitForSeconds(0.1f);
-        _corotuneDelayTimerAfterHit = false;
+        _coroutineDelayTimerAfterHit = false;
         IsHit = false;
     }
 }
