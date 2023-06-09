@@ -1,6 +1,5 @@
 using UnityEngine;
 using GameScore;
-using InfimaGames.LowPolyShooterPack;
 using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
@@ -13,7 +12,7 @@ public class MenuManager : MonoBehaviour
             FindObjectOfType<ShopAttachment>(true).SetDefaultSetting();
             FindObjectOfType<AmmunitionShop>(true).ReplenishAmmunition();
         }
-        //if (!Progress.IsGuideCompleted()) StartGame();
+        FindObjectOfType<SkinsShop>(true).Start();
     }
 
     public void StartSurvivalGame() => SceneManager.LoadScene(3);

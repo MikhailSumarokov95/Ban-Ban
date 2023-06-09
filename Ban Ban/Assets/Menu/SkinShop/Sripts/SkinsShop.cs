@@ -11,7 +11,7 @@ public class SkinsShop : MonoBehaviour, IShopPurchase
         Speed
     }
 
-    [SerializeField] private Skin[] skins;
+    [SerializeField] private Transform parentSkins;
 
     [Title(label: "Button Text")]
     [SerializeField] private TMP_Text priceMoneyText;
@@ -24,9 +24,11 @@ public class SkinsShop : MonoBehaviour, IShopPurchase
     [SerializeField] private TMP_Text damageText;
     [SerializeField] private TMP_Text speedText;
     private int _numberSkin = 0;
+    private Skin[] _skins;
 
-    private void Start()
+    public void Start()
     {
+        _skins = parentSkins.GetComponentsInChildren<Skin>(true);
         _numberSkin = FindNumberSkinInSkinParameters(Progress.GetSelectedSkinPlayer());
         ReloadShop();
     }
@@ -37,7 +39,7 @@ public class SkinsShop : MonoBehaviour, IShopPurchase
         SetActiveSkinInModel(_numberSkin, false);
         SetActiveButtonShop(_numberSkin, false);
         _numberSkin = Math.Sign(direction) + _numberSkin;
-        _numberSkin = ToxicFamilyGames.Math.SawChart(_numberSkin, 0, skins.Length - 1);
+        _numberSkin = ToxicFamilyGames.Math.SawChart(_numberSkin, 0, _skins.Length - 1);
         SetActiveBuffSkins(_numberSkin, true);
         SetActiveSkinInModel(_numberSkin, true);
         SetActiveButtonShop(_numberSkin, true);
@@ -45,17 +47,17 @@ public class SkinsShop : MonoBehaviour, IShopPurchase
 
     public void BuySkin()
     {
-        if (skins[_numberSkin].PriceInMoney > 0)
+        if (_skins[_numberSkin].PriceInMoney > 0)
         {
-            if (Money.SpendMoney(skins[_numberSkin].PriceInMoney))
+            if (Money.SpendMoney(_skins[_numberSkin].PriceInMoney))
             {
-                Progress.SaveBoughtSkinPlayer(skins[_numberSkin].NameSkin);
+                Progress.SaveBoughtSkinPlayer(_skins[_numberSkin].NameSkin);
                 ReloadShop();
             }
         }
-        else if (skins[_numberSkin].PriceInYan > 0)
+        else if (_skins[_numberSkin].PriceInYan > 0)
         {
-            switch (skins[_numberSkin].NameSkin)
+            switch (_skins[_numberSkin].NameSkin)
             {
                 case "Clown":
                     GSConnect.Purchase(GSConnect.PurchaseTag.Clown, this);
@@ -75,15 +77,15 @@ public class SkinsShop : MonoBehaviour, IShopPurchase
 
     public void RewardPerPurchase()
     {
-        Progress.SaveBoughtSkinPlayer(skins[_numberSkin].NameSkin);
+        Progress.SaveBoughtSkinPlayer(_skins[_numberSkin].NameSkin);
         ReloadShop();
     }
 
     public void SelectSkin()
     {
-        Progress.SaveSelectedSkinPlayer(skins[_numberSkin].NameSkin);
+        Progress.SaveSelectedSkinPlayer(_skins[_numberSkin].NameSkin);
         var buffs = new TFG.Generic.Dictionary<Buff, int>();
-        foreach (var buff in skins[_numberSkin].Buffs)
+        foreach (var buff in _skins[_numberSkin].Buffs)
             buffs.Add(buff.Buff, buff.Power);
         Progress.SaveSelectedBuffs(buffs);
         ReloadShop();
@@ -111,7 +113,7 @@ public class SkinsShop : MonoBehaviour, IShopPurchase
 
     private void SetActiveBuffSkins(int number, bool value)
     {
-        foreach (var buff in skins[number].Buffs)
+        foreach (var buff in _skins[number].Buffs)
         {
             switch (buff.Buff)
             {
@@ -133,42 +135,42 @@ public class SkinsShop : MonoBehaviour, IShopPurchase
 
     private void DisableAllSkins()
     {
-        foreach(var skin in skins)
+        foreach(var skin in _skins)
             skin.gameObject.SetActive(false);
     }
 
-    private void SetActiveSkinInModel(int number, bool value) => skins[number].gameObject.SetActive(value);
+    private void SetActiveSkinInModel(int number, bool value) => _skins[number].gameObject.SetActive(value);
 
     private void SetActiveButtonShop(int number, bool value)
     {
-        if (skins[number].IsFree)
+        if (_skins[number].IsFree)
         {
             isBoughtText.transform.parent.gameObject.SetActive(value);
         }
-        else if (Progress.IsSelectedSkinPlayer(skins[number].NameSkin))
+        else if (Progress.IsSelectedSkinPlayer(_skins[number].NameSkin))
         {
             isSelectedText.transform.parent.gameObject.SetActive(value);
         }
-        else if (Progress.IsBoughtSkinPlayer(skins[number].NameSkin))
+        else if (Progress.IsBoughtSkinPlayer(_skins[number].NameSkin))
         {
             isBoughtText.transform.parent.gameObject.SetActive(value);
         }
-        else if (skins[number].PriceInMoney != 0)
+        else if (_skins[number].PriceInMoney != 0)
         {
             priceMoneyText.transform.parent.gameObject.SetActive(value);
-            priceMoneyText.text = skins[number].PriceInMoney.ToString();
+            priceMoneyText.text = _skins[number].PriceInMoney.ToString();
         }
         else
         {
             priceYANText.transform.parent.gameObject.SetActive(value);
-            priceYANText.text = skins[number].PriceInYan.ToString();
+            priceYANText.text = _skins[number].PriceInYan.ToString();
         }
     }
 
     private int FindNumberSkinInSkinParameters(string nameSkin)
     {
-        for (var i = 0; i < skins.Length; i++)
-            if (skins[i].NameSkin == nameSkin) return i;
+        for (var i = 0; i < _skins.Length; i++)
+            if (_skins[i].NameSkin == nameSkin) return i;
         return 0;
     }
 }
