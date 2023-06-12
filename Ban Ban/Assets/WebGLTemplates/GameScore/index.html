@@ -35,7 +35,7 @@
   <!-- >>> replace with your gamescore load script here <<< -->
 
 </head>
-
+<style> body { overflow: hidden; } </style>
 <body class="{{{ SPLASH_SCREEN_STYLE.toLowerCase() }}}">
   <div id="unity-container" class="unity-desktop">
     <canvas id="unity-canvas"></canvas>
@@ -78,6 +78,8 @@
 
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
       container.className = "unity-mobile";
+	  canvas.style.width = "100vw";
+	  canvas.style.height = "100vh";
     }
 
     #if BACKGROUND_FILENAME

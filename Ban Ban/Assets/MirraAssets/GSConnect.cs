@@ -175,14 +175,16 @@ public class GSConnect : MonoBehaviour {
         }
     }
 
+    private static bool _isRewardedStarted;
     public static void ShowRewardedAd(string reward) {
         if (Application.isEditor) {
             Debug.Log($"GamePush: Rewarded AD {reward}.");
             instance.OnRewardedSuccess(reward);
             return;
         }
-        if (!GS_Ads.IsRewardedAvailable()) return;
+        if (!GS_Ads.IsRewardedAvailable() || _isRewardedStarted) return;
         GS_Ads.ShowRewarded(reward);
+        _isRewardedStarted = true;
         Pause = true;
     }
 
@@ -215,9 +217,11 @@ public class GSConnect : MonoBehaviour {
                 }
         }
         Sync();
+        _isRewardedStarted = false;
     }
 
     void OnRewardedClosed(bool success) {
+        _isRewardedStarted = false;
         Pause = false;
     }
 

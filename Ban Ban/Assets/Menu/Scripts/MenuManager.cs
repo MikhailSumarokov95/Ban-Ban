@@ -1,12 +1,10 @@
 using UnityEngine;
-using GameScore;
 using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
     private void Awake()
     {
-        if (!Application.isEditor) PlayerPrefs.SetString("selectedLanguage", GS_Language.Current());
         if (!Progress.IsSetDefaultWeapons())
         {
             FindObjectOfType<ShopAttachment>(true).SetDefaultSetting();
